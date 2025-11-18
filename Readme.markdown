@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/github/release/soffes/SAMKeychain.svg)](https://github.com/soffes/SAMKeychain/releases)
 [![CocoaPods](https://img.shields.io/cocoapods/v/SAMKeychain.svg)](https://cocoapods.org/pods/SAMKeychain)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 SAMKeychain is a simple wrapper for accessing accounts, getting passwords, setting passwords, and deleting passwords using the system Keychain on Mac OS X and iOS.
 
@@ -18,6 +19,14 @@ or Cartfile if you're using Carthage:
 
 ```
 github "soffes/SAMKeychain"
+```
+
+or add the following to your `Package.swift` if you're using Swift Package Manager:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/soffes/SAMKeychain.git", from: "1.5.3")
+]
 ```
 
 To manually add to your project:

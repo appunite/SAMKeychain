@@ -200,4 +200,8 @@ extern NSString *const kSAMKeychainWhereKey;
 
 NS_ASSUME_NONNULL_END
 
+#if __has_include(<SAMKeychain/SAMKeychainQuery.h>)
 #import <SAMKeychain/SAMKeychainQuery.h>
+#else
+#import "SAMKeychainQuery.h"
+#endif
